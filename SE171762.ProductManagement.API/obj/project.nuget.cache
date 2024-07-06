@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wLSq4xIafC+eZcc7UmCHsh7tc6XLp9e7RBNizfWWH0hhZmhQyGZFKrTv9bNMz6o1UAa9aIJiV3/Q6ceGDOR02w==",
+  "dgSpecHash": "4I3jWkfI9LeISXfJ/LMRX1wnKHEYswLEw7Or+gjU4EirVN/Pg9Xu4sKUX9yO326pF4ZBuYzEtUKp8v+bZ98zsw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Chau Han\\Downloads\\TestUI\\SE171762.ProductManagement.API\\SE171762.ProductManagement.API.csproj",
+  "projectFilePath": "D:\\Lab3_UI\\SE171762.ProductManagement.API\\SE171762.ProductManagement.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Chau Han\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Chau Han\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

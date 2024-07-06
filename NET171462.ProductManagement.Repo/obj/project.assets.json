@@ -4379,11 +4379,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chau Han\\Downloads\\TestUI\\NET171462.ProductManagement.Repo\\SE171462.ProductManagement.Repo.csproj",
+      "projectUniqueName": "D:\\Lab3_UI\\NET171462.ProductManagement.Repo\\SE171462.ProductManagement.Repo.csproj",
       "projectName": "SE171462.ProductManagement.Repo",
-      "projectPath": "C:\\Users\\Chau Han\\Downloads\\TestUI\\NET171462.ProductManagement.Repo\\SE171462.ProductManagement.Repo.csproj",
+      "projectPath": "D:\\Lab3_UI\\NET171462.ProductManagement.Repo\\SE171462.ProductManagement.Repo.csproj",
       "packagesPath": "C:\\Users\\Chau Han\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chau Han\\Downloads\\TestUI\\NET171462.ProductManagement.Repo\\obj\\",
+      "outputPath": "D:\\Lab3_UI\\NET171462.ProductManagement.Repo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4493,7 +4493,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

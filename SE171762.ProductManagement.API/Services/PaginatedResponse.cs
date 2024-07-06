@@ -1,8 +1,9 @@
-﻿using System.Text.Json.Serialization;
+﻿using SE171762.ProductManagement.API.Services.Product;
+using System.Text.Json.Serialization;
 
 namespace SE171762.ProductManagement.API.Services
 {
-    public class PaginatedResponse<T>
+    public class PaginatedResponse
     {
         [JsonPropertyName("total-pages")]
         public int TotalPages { get; set; }
@@ -14,17 +15,7 @@ namespace SE171762.ProductManagement.API.Services
         public int TotalItems { get; set; }
         [JsonPropertyName("page-items")]
         public int PageItems { get; set; }
-        public IEnumerable<T> Items { get; set; }
+        public IEnumerable<ProductResponse> Items { get; set; }
 
-        public PaginatedResponse(int totalPages, int pageSize, int pageIndex, int totalItems,
-            int pageItems, IEnumerable<T> items) 
-        {
-            TotalPages = totalPages;
-            PageSize = pageSize;
-            PageIndex = pageIndex;
-            TotalItems = totalItems;
-            PageItems = pageItems;
-            Items = items;
-        }
     }
 }

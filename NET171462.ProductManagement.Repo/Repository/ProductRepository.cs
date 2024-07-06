@@ -1,4 +1,5 @@
-﻿using NET171462.ProductManagement.Repo.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using NET171462.ProductManagement.Repo.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,23 @@ namespace NET171462.ProductManagement.Repo.Repository
         {
         }
 
+        public Product Create(Product product)
+        {
+            try
+            {
+                context.Add(product);
+                context.SaveChanges();
+                Product p = context.Products.Where(p => product.ProductId == p.ProductId).Include(p => p.Category).FirstOrDefault();
+                return p;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public bool IsExistProduct(int id)
-           => context.Products.Find(id) == null ? false : true;
+            => context.Products.Find(id) == null ? false : true;
     }
 
 

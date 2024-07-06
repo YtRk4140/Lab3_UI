@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NET171462.ProductManagement.Repo.Models;
 using NET171462.ProductManagement.Repo.Repository.Interface;
-using SE171762.ProductManagement.API.Services.Category;
+using SE171762.ProductManagement.API.Services;
 using SE171762.ProductManagement.API.Services.Product;
 using System.Linq.Expressions;
 
@@ -23,17 +23,6 @@ namespace SE171762.ProductManagement.API.Controllers
             this.mapper = mapper;
         }
 
-        public static Expression<Func<Product, object>> GetOrderBy(string orderBy)
-            => orderBy?.ToLower() switch
-            {
-                "1" => e => e.ProductId,
-                "2" => e => e.CategoryId,
-                "3" => e => e.ProductName,
-                "4" => e => e.UnitPrice,
-                "5" => e => e.UnitsInStock,
-                _ => e => e.ProductName
-            };
-
         [HttpGet]
         public IActionResult Get(
             string? searchValue = null,
@@ -42,26 +31,65 @@ namespace SE171762.ProductManagement.API.Controllers
             string? orderBy = "",
             bool? isAscending = true,
             int? pageIndex = 1,
-            int? pageSize = 5)
+            int? pageSize = 50)
         {
             Expression<Func<Product, bool>> filter = p =>
                    (searchValue == null || p.ProductName.Contains(searchValue))
                 && (minPrice == null || p.UnitPrice >= minPrice)
                 && (maxPrice == null || p.UnitPrice <= maxPrice);
+            Expression<Func<Product, object>> order = null;
 
-            var keySelector = GetOrderBy(orderBy);
+            if ((pageIndex != null && pageSize == null) || (pageSize != null && pageIndex == null))
+                return BadRequest("Please enter page size and page index to paging");
+            if (orderBy != null && orderBy != "")
+            {
+                switch (orderBy.ToLower())
+                {
+                    case "1":
+                        order = p => p.ProductName;
+                        break;
+                    case "2":
+                        order = p => p.ProductId;
+                        break;
+                    case "3":
+                        order = p => p.CategoryId;
+                        break;
+                    case "4":
+                        order = p => p.UnitsInStock;
+                        break;
+                    case "5":
+                        order = p => p.UnitPrice;
+                        break;
+                    default:
+                        break;
+                }
+            }
 
-            var result = unitOfWork.ProductRepository.Get(
+            var list = unitOfWork.ProductRepository.Get(
                     filter: filter,
-                    orderBy: keySelector,
-                    isAscending: isAscending,
-                    pageIndex: pageIndex,
-                    pageSize: pageSize,
+                    orderBy: order,
+                    isAscending: isAscending ?? true,
+                    pageIndex: pageIndex ?? 1,
+                    pageSize: pageSize ?? 50,
                     includeProperties: "Category");
-            var response = mapper.Map<IEnumerable<ProductResponse>>(result);
-            if (response == null)
+            if (list.Count() > 0)
+            {
+                IEnumerable<ProductResponse> result = mapper.Map<IEnumerable<ProductResponse>>(list);
+                PaginatedResponse response = new PaginatedResponse
+                {
+                    PageIndex = pageIndex ?? 1,
+                    PageSize = pageSize ?? 50,
+                    TotalItems = unitOfWork.ProductRepository.Count(),
+                    PageItems = result.Count(),
+                    TotalPages = unitOfWork.ProductRepository.Count() / pageSize ?? 50,
+                    Items = result,
+                };
+                return Ok(response);
+            }
+            else
+            {
                 return NotFound("Product list is empty");
-            return Ok(response);
+            }
         }
 
 
@@ -109,10 +137,6 @@ namespace SE171762.ProductManagement.API.Controllers
             }
 
             var request = unitOfWork.ProductRepository.GetByID(id);
-            if (!unitOfWork.ProductRepository.IsExistProduct(id))
-            {
-                return NotFound("This product does not exist or has been deleted");
-            }
 
             mapper.Map(productRequest, request);
 

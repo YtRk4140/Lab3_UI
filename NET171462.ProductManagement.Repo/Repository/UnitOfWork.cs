@@ -18,8 +18,26 @@ namespace NET171462.ProductManagement.Repo.Repository
         }
 
         private CategoryRepository categoryRepository;
-        private ProductRepository productRepository;
+        private IGenericRepository<Product> productRepository;
+        //private IGenericRepository<Category> categoryRepository;
+        //private IGenericRepository<AccountMember> accountRepository;
         private AccountRepository accountRepository;
+        private ProductRepository productCustomRepository;
+
+
+        /*
+        public IGenericRepository<Category> CategoryRepository
+        {
+            get
+            {
+                if (categoryRepository == null)
+                {
+                    categoryRepository = new GenericRepository<Category>(context);
+                }
+                return categoryRepository;
+            }
+        }
+        */
 
         public CategoryRepository CategoryRepository
         {
@@ -34,18 +52,31 @@ namespace NET171462.ProductManagement.Repo.Repository
             }
         }
 
-        public ProductRepository ProductRepository
+        public IGenericRepository<Product> ProductRepository
         {
             get
             {
-
                 if (productRepository == null)
                 {
-                    productRepository = new ProductRepository(context);
+                    productRepository = new GenericRepository<Product>(context);
                 }
                 return productRepository;
             }
         }
+
+        /*
+        public IGenericRepository<AccountMember> AccountRepository
+        {
+            get
+            {
+                if (accountRepository == null)
+                {
+                    accountRepository = new GenericRepository<AccountMember>(context);
+                }
+                return accountRepository;
+            }
+        }
+        */
 
         public AccountRepository AccountRepository
         {
@@ -59,9 +90,28 @@ namespace NET171462.ProductManagement.Repo.Repository
             }
         }
 
+        public ProductRepository ProductCustomRepository
+        {
+            get
+            {
+                if (productCustomRepository == null)
+                {
+                    productCustomRepository = new ProductRepository(context);
+                }
+                return productCustomRepository;
+            }
+        }
+
         public void Save()
         {
-            context.SaveChanges();
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         private bool disposed = false;

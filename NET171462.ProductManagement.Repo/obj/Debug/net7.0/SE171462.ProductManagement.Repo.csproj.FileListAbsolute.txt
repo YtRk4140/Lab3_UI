@@ -54,3 +54,18 @@ C:\Users\Chau Han\Downloads\TestUI\NET171462.ProductManagement.Repo\obj\Debug\ne
 C:\Users\Chau Han\Downloads\TestUI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.pdb
 C:\Users\Chau Han\Downloads\TestUI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.genruntimeconfig.cache
 C:\Users\Chau Han\Downloads\TestUI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\ref\SE171462.ProductManagement.Repo.dll
+D:\Lab3_UI\NET171462.ProductManagement.Repo\bin\Debug\net7.0\SE171462.ProductManagement.Repo.deps.json
+D:\Lab3_UI\NET171462.ProductManagement.Repo\bin\Debug\net7.0\SE171462.ProductManagement.Repo.runtimeconfig.json
+D:\Lab3_UI\NET171462.ProductManagement.Repo\bin\Debug\net7.0\SE171462.ProductManagement.Repo.dll
+D:\Lab3_UI\NET171462.ProductManagement.Repo\bin\Debug\net7.0\SE171462.ProductManagement.Repo.pdb
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.csproj.AssemblyReference.cache
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.AssemblyInfoInputs.cache
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.AssemblyInfo.cs
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.csproj.CoreCompileInputs.cache
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.sourcelink.json
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.dll
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\refint\SE171462.ProductManagement.Repo.dll
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.pdb
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\SE171462.ProductManagement.Repo.genruntimeconfig.cache
+D:\Lab3_UI\NET171462.ProductManagement.Repo\obj\Debug\net7.0\ref\SE171462.ProductManagement.Repo.dll

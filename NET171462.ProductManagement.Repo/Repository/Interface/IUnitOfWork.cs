@@ -10,9 +10,10 @@ namespace NET171462.ProductManagement.Repo.Repository.Interface
 {
     public interface IUnitOfWork
     {
+        IGenericRepository<Product> ProductRepository { get; }
         CategoryRepository CategoryRepository { get; }
-        ProductRepository ProductRepository { get; }
         AccountRepository AccountRepository { get; }
+        ProductRepository ProductCustomRepository { get; }
         void Save();
     }
 }

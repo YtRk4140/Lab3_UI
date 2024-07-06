@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "08E9zwVQaPrBmXq0KeEIw0z7CNOg8RR1NEjlD/z9Yl1MuarHbHEJbMd5ATB4dsY01koLkw5ZQu6P935dOkgglQ==",
+  "dgSpecHash": "KqpAC6XxNnVTtAmGd5WCvTKuFm7issAN4q0raX4p6+kc9Wl6toTFI9e1Arj/ceDYMBO6hVpQFi92kPrpIbkaiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Chau Han\\Downloads\\TestUI\\NET171462.ProductManagement.Repo\\SE171462.ProductManagement.Repo.csproj",
+  "projectFilePath": "D:\\Lab3_UI\\NET171462.ProductManagement.Repo\\SE171462.ProductManagement.Repo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Chau Han\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Chau Han\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

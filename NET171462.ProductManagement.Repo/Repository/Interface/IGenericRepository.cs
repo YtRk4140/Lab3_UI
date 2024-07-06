@@ -9,23 +9,21 @@ namespace NET171462.ProductManagement.Repo.Repository.Interface
 {
     public interface IGenericRepository<TEntity>
     {
-        IEnumerable<TEntity> Get(
+        public IEnumerable<TEntity> Get();
+        public IEnumerable<TEntity> Get(
             Expression<Func<TEntity, bool>> filter = null,
-            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
-            bool? sortOrderAsc = true,
+            Expression<Func<TEntity, object>> orderBy = null,
             string includeProperties = "",
+            bool? isAscending = true,
             int? pageIndex = null,
-            int? pageSize = null,
-            int? pageItems = null);
+            int? pageSize = null);
 
-        TEntity GetByID(object id);
-
-        void Insert(TEntity entity);
-
-        void Delete(object id);
-
-        void Delete(TEntity entityToDelete);
-
-        void Update(TEntity entityToUpdate);
+        public TEntity GetByID(object id);
+        public int Count();
+        public void Insert(TEntity entity);
+        public void Delete(object id);
+        public void Delete(TEntity entityToDelete);
+        public void Update(TEntity entityToUpdate);
+        public void Update(object id, TEntity entityToUpdate);
     }
 }

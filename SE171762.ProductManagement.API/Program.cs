@@ -96,7 +96,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles();
 app.UseAuthentication();
-
 app.UseAuthorization();
 
 app.MapControllers();

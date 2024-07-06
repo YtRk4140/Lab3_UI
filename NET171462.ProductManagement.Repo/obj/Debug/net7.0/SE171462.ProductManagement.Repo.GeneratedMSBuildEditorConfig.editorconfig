@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SE171462.ProductManagement.Repo
-build_property.ProjectDir = C:\Users\Chau Han\Downloads\TestUI\NET171462.ProductManagement.Repo\
+build_property.ProjectDir = D:\Lab3_UI\NET171462.ProductManagement.Repo\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

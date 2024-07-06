@@ -9,37 +9,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SE171462.ProductManagement.UI
 build_property.RootNamespace = SE171462.ProductManagement.UI
-build_property.ProjectDir = C:\Users\Chau Han\Downloads\TestUI\SE171462.ProductManagement.UI\
+build_property.ProjectDir = D:\Lab3_UI\SE171462.ProductManagement.UI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Chau Han\Downloads\TestUI\SE171462.ProductManagement.UI
+build_property.MSBuildProjectDirectory = D:\Lab3_UI\SE171462.ProductManagement.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Chau Han/Downloads/TestUI/SE171462.ProductManagement.UI/Views/Home/Index.cshtml]
+[D:/Lab3_UI/SE171462.ProductManagement.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chau Han/Downloads/TestUI/SE171462.ProductManagement.UI/Views/Home/Privacy.cshtml]
+[D:/Lab3_UI/SE171462.ProductManagement.UI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chau Han/Downloads/TestUI/SE171462.ProductManagement.UI/Views/Shared/Error.cshtml]
+[D:/Lab3_UI/SE171462.ProductManagement.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chau Han/Downloads/TestUI/SE171462.ProductManagement.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Lab3_UI/SE171462.ProductManagement.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chau Han/Downloads/TestUI/SE171462.ProductManagement.UI/Views/_ViewImports.cshtml]
+[D:/Lab3_UI/SE171462.ProductManagement.UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chau Han/Downloads/TestUI/SE171462.ProductManagement.UI/Views/_ViewStart.cshtml]
+[D:/Lab3_UI/SE171462.ProductManagement.UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chau Han/Downloads/TestUI/SE171462.ProductManagement.UI/Views/Shared/_Layout.cshtml]
+[D:/Lab3_UI/SE171462.ProductManagement.UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mvmygp6lhm
